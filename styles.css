@@ -1,86 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
-    font-family: "Roboto", serif;
-}
-
-.inter {
-    font-family: "Inter", serif;
-}
-
-body{
+* {
     margin: 0;
-}
-
-header {
-    background-color: rgba(255, 255, 255, 1);
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8fcfd;
+  }
+  
+  /*Header*/
+  header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
     height: 90px;
-    font-size: 14px;
-}
-
-#logo {
-    padding-left: 110px;
-    padding-right: 73px;
-}
-
-.header-links a{
-    padding-right: 48px;
-}
-
-.header-last {
-    margin-left: 90px;
-}
-
-.header-last a{
-    padding: 12px 36px;
-    background-color: rgba(241, 241, 241, 1);
-    border-radius: 23px;
-    margin-left: 10px;
-}
-
-.header-last select{
-    padding: 12px 12px;
-    background-color: rgba(235, 235, 235, 1);
-    border-radius: 23px;
-}
-
-#home-page {
-    color: rgba(71, 192, 207, 1);
-}
-
-#acc {
-    background-color:  rgba(71, 192, 207, 1);
-    color: rgba(255, 255, 255, 1)
-}
-
-.first-section {
-    width: 100%;
-    height: 827px;
-    background-color: black;
-    display: flex;
-}
-
-a{
+    background-color: white;
+  }
+  
+  #logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header-links a {
+    margin-right: 20px;
     text-decoration: none;
     color: black;
-}
-
-.first-section h1 {
-    font-size: 32px;
-}
-
-.first-section h2 {
-    font-size: 40px;
-}
-
-.first-section p {
+    font-size: 14px;
+  }
+  
+  .header-last button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #sign-in {
+    background-color: #ebebeb;
+    color: black;
+  }
+  
+  #create-account {
+    background-color: #47C0CF;
+    color: white;
+  }
+  
+  /*Main Section*/
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    background-color: #eafafa;
+    z-index: 2;
+  }
+  
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .text-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .text-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .text-content h1 span {
+    color: #47C0CF;
+  }
+  
+  .text-content p {
     font-size: 16px;
-}
-
-.investing {
-    width: 721px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  #investing-button {
+    background-color: #47C0CF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  #investing-button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /*Img Section*/
+  .image-content {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #hand-img {
+    width: 400px;
+    height: auto;
+  }
+  
+  .second-section{ 
     background-color: red;
-    margin-top: 250px;
-}
+    padding: 24px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+    z-index: 1;
+    margin-top: -50px;
+  }
+
+  .stats {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .stats div{
+    background-color: red;
+    padding: 32px 118px 39px 21px;
+    border-radius: 10px;
+    font-size: 35px;
+    background-color: rgba(246, 246, 246, 1);
+  }
+
+  .stats div p:last-child{
+    color: rgba(166, 166, 166, 1);
+    font-size: 16px;
+    margin-top: 10px;
+  }

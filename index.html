@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Investment Landing Page</title>
 </head>
 <body>
-    <header>
-            <div id="logo">
-                <img src="logo.svg">
-            </div>
-                <div class="header-links">
-                    <a id="home-page">Home Page</a>
-                    <a href="#">About us</a>
-                    <a href="#">News</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Contac us</a>
-                    <a href="#">Packages</a>
-                </div>
-            <div class="header-last">
-                <img>
-                <select class="language-selector">
-                    <option value="en">en</option>
-                    <option value="es">🇪l</option>
-                    <option value="fr">fr</option>
-                    <option value="de">🇩🇪</option>
-                </select>
-                <a>Sign in</a>
-                <a id="acc">Create Account</a>
-            </div>
-    </header>
+  <header>
+    <div id="logo">iNaturalist<span style="color: #47C0CF;">AU</span></div>
+    <nav class="header-links">
+      <a href="#">Home Page</a>
+      <a href="#">About Us</a>
+      <a href="#">News</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Packages</a>
+    </nav>
+    <div class="header-last">
+      <button id="sign-in">Sign In</button>
+      <button id="create-account">Create Account</button>
+    </div>
+  </header>
 
-    <section class="first-section">
-        <div class="investing">
-            <h1>Choose your package and join our journey</h1>
-            <h2>Deadline for contribution 25 February</h2>
-            <p class="inter">Our trading charts provide a complete picture of live currency, stocks and commodities price 
-                movements and underpin successful technical analysis. Identify patterns and trends and respond to 
-                price action more effectively by typing in your  chosen asset and applying.</p>
-            <a href="#">Start Investing</a>
+  <section class="main-content">
+    <div class="text-content">
+      <h2>Choose your package and join our journey</h2>
+      <h1>Deadline for contribution <span>25 February</span></h1>
+      <p>Our trading charts provide a complete picture of live currency, stocks and commodities price 
+        movements and underpin successful technical analysis. Identify patterns and trends and respond to 
+        price action more effectively by typing in your  chosen asset and applying.</p>
+      <button id="investing-button"><a href="#">Start Investing</a></button>
+    </div>
+    <div class="image-content">
+      <img src="hand-img.png" alt="Hand image" id="hand-img">
+    </div>
+  </section>
+
+  <section class="second-section">
+    <div class="stats">
+        <div>
+            <p>532</p>
+            <p>Projact Investors</p>
         </div>
-        <div></div>
-    </section>
+        <div>
+            <p>$21,621.50</p>
+            <p>Raised</p>
+        </div>
+        <div>
+            <p>20%</p>
+            <p>Annual Avarange Return</p>
+        </div>
+    </div>
+
+    <div>
+        
+    </div>
+  </section>
 </body>
 </html>
